@@ -1,1 +1,29 @@
 // Navigation Styles here
+
+.nav-bar {
+  @media @mobile {
+    margin-top: 5%;
+    flex-direction: column;
+    width: 100%;
+  }
+  .center(); // mix-in
+  .display(row, space-between, center);
+
+  nav {
+    @media @mobile {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 4%;
+    margin: 5%;
+
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
